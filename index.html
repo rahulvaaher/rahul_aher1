@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Angel One Demat Account | Rahul Aher</title>
+  <meta name="description" content="Open Angel One demat account online with personal support from Rahul Aher, Authorized Person associated with Angel One Ltd." />
+  <style>
+    :root {
+      --primary: #0f2b5b;
+      --secondary: #f59e0b;
+      --bg: #f5f8fc;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --white: #ffffff;
+      --border: #e5e7eb;
+      --success: #0f766e;
+      --shadow: 0 10px 30px rgba(15, 43, 91, 0.10);
+      --radius: 18px;
+      --maxw: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(100% - 32px, var(--maxw));
+      margin: 0 auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: 700;
+      border: 2px solid transparent;
+      transition: 0.25s ease;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      opacity: 0.95;
+    }
+
+    .btn-secondary {
+      background: var(--secondary);
+      color: #111827;
+      box-shadow: var(--shadow);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(229, 231, 235, 0.9);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 16px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 20px;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero {
+      padding: 68px 0 36px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: #e8effb;
+      color: var(--primary);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero h2 {
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.12;
+      margin: 0 0 16px;
+      color: var(--primary);
+    }
+
+    .hero p.main {
+      font-size: 18px;
+      color: var(--text);
+      margin: 0 0 12px;
+    }
+
+    .hero p.sub {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .mini-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .mini-points span {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 999px;
+    }
+
+    .hero-card {
+      background: linear-gradient(135deg, #0f2b5b 0%, #183d7f 100%);
+      border-radius: 28px;
+      padding: 26px;
+      color: var(--white);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      min-height: 420px;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 50%;
+      right: -60px;
+      top: -40px;
+    }
+
+    .phone-ui {
+      background: var(--white);
+      border-radius: 24px;
+      padding: 18px;
+      color: var(--text);
+      width: 100%;
+      max-width: 320px;
+      margin: 28px auto 0;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+      position: relative;
+      z-index: 1;
+    }
+
+    .phone-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .metric {
+      background: #eef4ff;
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--primary);
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .metric span {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    section {
+      padding: 34px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .section-title h3 {
+      margin: 0 0 8px;
+      color: var(--primary);
+      font-size: clamp(26px, 4vw, 38px);
+    }
+
+    .section-title p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .grid-4, .grid-3, .grid-2 {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: #edf4ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    .card h4 {
+      margin: 0 0 8px;
+      color: var(--primary);
+      font-size: 19px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .about-box {
+      background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .highlight {
+      background: #fff8e7;
+      border-left: 4px solid var(--secondary);
+      padding: 14px 16px;
+      border-radius: 12px;
+      color: #7c5b00;
+      margin-top: 16px;
+      font-weight: 700;
+    }
+
+    .steps .card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .step-number {
+      font-size: 40px;
+      font-weight: 800;
+      color: #d7e3fb;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .audience-list, .choose-list, .what-get-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .list-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 16px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .tick {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #e8faf4;
+      color: var(--success);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      flex: 0 0 26px;
+      margin-top: 2px;
+    }
+
+    .profile-box {
+      background: linear-gradient(135deg, #0f2b5b 0%, #173a75 100%);
+      color: var(--white);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      min-height: 100%;
+    }
+
+    .profile-avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .faq details {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .faq details + details {
+      margin-top: 12px;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--primary);
+      list-style: none;
+    }
+
+    .faq summary::-webkit-details-marker { display: none; }
+
+    .faq details p {
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    .cta-banner {
+      background: linear-gradient(135deg, #0f2b5b 0%, #1d4b97 100%);
+      color: var(--white);
+      border-radius: 28px;
+      padding: 38px 28px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .cta-banner h3 {
+      margin: 0 0 10px;
+      font-size: clamp(28px, 4vw, 42px);
+    }
+
+    .cta-banner p {
+      margin: 0 0 22px;
+      color: rgba(255,255,255,0.88);
+      font-size: 16px;
+    }
+
+    footer {
+      background: #0b1f43;
+      color: #d9e3f4;
+      padding: 42px 0 110px;
+      margin-top: 36px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 24px;
+    }
+
+    footer h4 {
+      color: #fff;
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+
+    footer p, footer li {
+      margin: 0 0 8px;
+      color: #d9e3f4;
+      font-size: 15px;
+    }
+
+    .disclaimer {
+      margin-top: 18px;
+      padding: 16px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .sticky-mobile {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255,255,255,0.97);
+      border-top: 1px solid var(--border);
+      padding: 10px 12px;
+      z-index: 1200;
+      gap: 10px;
+    }
+
+    .sticky-mobile .btn {
+      flex: 1;
+      padding: 13px 10px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-4,
+      .grid-3,
+      .grid-2,
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .topbar-inner,
+      .hero-grid,
+      .grid-4,
+      .grid-3,
+      .grid-2,
+      .footer-grid {
+        grid-template-columns: 1fr;
+        display: grid;
+      }
+
+      .topbar-inner {
+        gap: 14px;
+      }
+
+      .nav-actions {
+        width: 100%;
+      }
+
+      .nav-actions .btn {
+        flex: 1;
+      }
+
+      .hero {
+        padding-top: 34px;
+      }
+
+      .hero-card {
+        min-height: auto;
+      }
+
+      .phone-ui {
+        max-width: 100%;
+      }
+
+      footer {
+        padding-bottom: 100px;
+      }
+
+      .sticky-mobile {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand" style="display:flex;align-items:center;gap:10px;">
+        <img src="AngelOne.png" alt="Angel One Logo" style="height:52px;width:auto;" />
+        <div>
+          <h1>Rahul Aher</h1>
+          <p>Authorized Person Support for Angel One Account Opening</p>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a href="https://a.aonelink.in/ANGOne/AZrkQiS" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Account Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Demat Account Opening Assistance</span>
+          <h2>Open Angel One Demat Account Online with Personal Support</h2>
+          <p class="main">Start your investment journey with IPO, Mutual Fund, Option Trading and easy account opening support.</p>
+          <p class="sub">Assistance by Rahul Aher – Authorized Person associated with Angel One Ltd.</p>
+          <div class="hero-actions">
+            <a href="https://a.aonelink.in/ANGOne/AZrkQiS" class="btn btn-primary" target="_blank" rel="noopener" >Open Account Now</a>
+            <a href="https://wa.me/919511290921" class="btn btn-secondary" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </div>
+          <div class="mini-points">
+            <span>Fast online process</span>
+            <span>Easy KYC</span>
+            <span>Support across India</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3 style="margin:0 0 6px; font-size:28px;">Simple, Trusted and Guided</h3>
+          <p style="margin:0; color:rgba(255,255,255,0.88);">Get personal help for account opening and KYC support.</p>
+          <div class="phone-ui">
+            <div class="phone-top">
+              <strong>Angel One Support</strong>
+              <span>Online</span>
+            </div>
+            <div class="metric">
+              <strong>Account Opening</strong>
+              <span>Easy Process</span>
+            </div>
+            <div class="metric">
+              <strong>KYC Support</strong>
+              <span>Step-by-Step</span>
+            </div>
+            <div class="metric">
+              <strong>Available Segments</strong>
+              <span>IPO • MF • F&O</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid-4">
+          <div class="card">
+            <div class="icon">🛡️</div>
+            <h4>Authorized Person Support</h4>
+            <p>Get account opening help from a real service representative.</p>
+          </div>
+          <div class="card">
+            <div class="icon">⚡</div>
+            <h4>Quick Online KYC</h4>
+            <p>Simple and smooth digital account opening process.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🌍</div>
+            <h4>All India Assistance</h4>
+            <p>Support available for clients across India.</p>
+          </div>
+          <div class="card">
+            <div class="icon">💬</div>
+            <h4>WhatsApp Help Available</h4>
+            <p>Get guidance step-by-step on call or WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h3>Why Open Your Demat Account with Angel One</h3>
+          <p>Simple support, clear guidance and easy communication during the full process.</p>
+        </div>
+        <div class="about-box">
+          <p style="font-size:17px; margin:0; color:var(--text);">
+            I help clients open their Angel One demat accounts with simple step-by-step support. Whether you are a beginner or already interested in trading and investing, I assist you with account opening, KYC guidance and basic onboarding support.
+          </p>
+          <div class="highlight">Personal assistance makes the process easier, faster and more trusted.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h3>Benefits of Opening an Angel One Demat Account</h3>
+          <p>Useful for beginners, IPO investors, mutual fund users and market participants.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card"><div class="icon">📲</div><h4>Easy Account Opening</h4><p>Open your account online from home with guided support.</p></div>
+          <div class="card"><div class="icon">🏢</div><h4>IPO Access</h4><p>Apply for upcoming IPOs directly from your account.</p></div>
+          <div class="card"><div class="icon">📈</div><h4>Mutual Fund Investment</h4><p>Start SIP and mutual fund investments easily.</p></div>
+          <div class="card"><div class="icon">📊</div><h4>Option Trading Access</h4><p>Suitable for users interested in F&amp;O segment activation.</p></div>
+          <div class="card"><div class="icon">📱</div><h4>User-Friendly App</h4><p>Simple app experience for investment and trading use.</p></div>
+          <div class="card"><div class="icon">🤝</div><h4>Personal Relationship Support</h4><p>Guidance before and after account opening.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="container">
+        <div class="section-title">
+          <h3>How to Open Your Account</h3>
+          <p>The process is fully online and easy to complete with support.</p>
+        </div>
+        <div class="grid-4">
+          <div class="card"><div class="step-number">1</div><h4>Click on Open Account</h4><p>Tap the account opening button to begin.</p></div>
+          <div class="card"><div class="step-number">2</div><h4>Keep Documents Ready</h4><p>Keep PAN, Aadhaar and bank details ready.</p></div>
+          <div class="card"><div class="step-number">3</div><h4>Complete Online KYC</h4><p>Fill in your details and complete verification.</p></div>
+          <div class="card"><div class="step-number">4</div><h4>Start Your Journey</h4><p>After approval, you can begin investing and trading.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h3>This Account is Useful For</h3>
+          <p>Built for first-time users as well as market participants.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="audience-list">
+              <div class="list-item"><span class="tick">✓</span><div><strong>Beginners</strong><br>People starting their investment journey.</div></div>
+              <div class="list-item"><span class="tick">✓</span><div><strong>IPO Investors</strong><br>Users who want to apply for IPOs.</div></div>
+              <div class="list-item"><span class="tick">✓</span><div><strong>Mutual Fund Investors</strong><br>People looking to build long-term wealth through SIPs.</div></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="audience-list">
+              <div class="list-item"><span class="tick">✓</span><div><strong>Option Traders</strong><br>Users interested in learning and accessing derivatives.</div></div>
+              <div class="list-item"><span class="tick">✓</span><div><strong>Working Professionals</strong><br>People planning their financial future in a structured way.</div></div>
+              <div class="list-item"><span class="tick">✓</span><div><strong>Students</strong><br>Anyone looking to start understanding investing early.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h3>Why Choose Angel One for Your Demat Account</h3>
+          <p>Personal assistance on WhatsApp and call, with simple language support.</p>
+        </div>
+        <div class="grid-2">
+          <div class="profile-box">
+            <div class="profile-avatar">RA</div>
+            <h4 style="margin:0 0 8px; font-size:28px; color:#fff;">Rahul Aher</h4>
+            <p style="margin:0; color:rgba(255,255,255,0.85);">Authorized Person associated with Angel One Ltd.</p>
+          </div>
+          <div class="card">
+            <div class="choose-list">
+              <div class="list-item"><span class="tick">✓</span><div>Personal support on call and WhatsApp</div></div>
+              <div class="list-item"><span class="tick">✓</span><div>Help with account opening process</div></div>
+              <div class="list-item"><span class="tick">✓</span><div>Guidance for document and KYC steps</div></div>
+              <div class="list-item"><span class="tick">✓</span><div>Support available after account activation</div></div>
+              <div class="list-item"><span class="tick">✓</span><div>Easy communication in simple language</div></div>
+              <div class="list-item"><span class="tick">✓</span><div>Service available across India</div></div>
+            </div>
+            <div class="highlight">I am your personal relationship support contact for demat account opening assistance.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h3>Documents Required for Online KYC</h3>
+          <p>Please keep the following documents ready before starting the process.</p>
+        </div>
+        <div class="grid-4">
+          <div class="card"><div class="icon">🪪</div><h4>PAN Card</h4><p>Mandatory for account opening.</p></div>
+          <div class="card"><div class="icon">🆔</div><h4>Aadhaar Card</h4><p>Required for identity and address verification.</p></div>
+          <div class="card"><div class="icon">🏦</div><h4>Bank Proof</h4><p>Bank account details or cancelled cheque may be needed.</p></div>
+          <div class="card"><div class="icon">✍️</div><h4>Signature</h4><p>A clear signature image may be required during process.</p></div>
+        </div>
+        <div class="highlight" style="margin-top:18px;">Please keep your mobile number linked with Aadhaar for a smooth KYC process.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h3>What You Get</h3>
+          <p>Clear support before and after the account opening process.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="what-get-list">
+              <div class="list-item"><span class="tick">✓</span><div>Easy account opening support</div></div>
+              <div class="list-item"><span class="tick">✓</span><div>Basic onboarding help</div></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="what-get-list">
+              <div class="list-item"><span class="tick">✓</span><div>Personal assistance on WhatsApp</div></div>
+              <div class="list-item"><span class="tick">✓</span><div>Simple communication in Hindi / Marathi / English</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support-contact">
+      <div class="container">
+        <div class="section-title">
+          <h3>Need Help Before Opening Your Account</h3>
+          <p>If you have any doubt about demat account opening, KYC steps, segment activation or process timing, feel free to contact me directly.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card"><div class="icon">📞</div><h4>Call Rahul Aher</h4><p>Speak directly for account opening assistance.</p></div>
+          <div class="card"><div class="icon">💬</div><h4>WhatsApp for Instant Help</h4><p>Get quick support and guidance step-by-step.</p></div>
+          <div class="card"><div class="icon">🤝</div><h4>Get Personal Assistance</h4><p>I will guide you through the process from start to completion.</p></div>
+        </div>
+        <div style="text-align:center; margin-top:22px;">
+          <a href="https://wa.me/919511290921" class="btn btn-secondary" target="_blank" rel="noopener">Talk to Me Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <div class="section-title">
+          <h3>Frequently Asked Questions</h3>
+          <p>Common questions related to account opening support.</p>
+        </div>
+        <details>
+          <summary>How much time does demat account opening take?</summary>
+          <p>The online process is usually quick if all documents are ready and KYC is completed properly.</p>
+        </details>
+        <details>
+          <summary>What documents are required?</summary>
+          <p>PAN card, Aadhaar card, bank proof and signature are generally required.</p>
+        </details>
+        <details>
+          <summary>Can beginners open an account?</summary>
+          <p>Yes, beginners can easily open an account and start learning about investing and trading.</p>
+        </details>
+        <details>
+          <summary>Can I apply for IPO using this account?</summary>
+          <p>Yes, eligible users can use their demat account for IPO applications.</p>
+        </details>
+        <details>
+          <summary>Will I get support after account opening?</summary>
+          <p>Yes, I provide assistance for basic onboarding and account opening related support.</p>
+        </details>
+        <details>
+          <summary>Can I contact you on WhatsApp?</summary>
+          <p>Yes, you can contact me directly on WhatsApp for account opening support.</p>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-banner">
+          <h3>Ready to Open Your Angel One Demat Account</h3>
+          <p>Start with a simple online process and get personal support at every step.</p>
+          <div class="hero-actions" style="justify-content:center; margin-bottom:10px;">
+            <a href="https://a.aonelink.in/ANGOne/AZrkQiS" class="btn btn-secondary" target="_blank" rel="noopener" >Open Account Now</a>
+            <a href="https://wa.me/919511290921" class="btn btn-outline" style="color:#fff; border-color:#fff;" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </div>
+          <div style="color:rgba(255,255,255,0.85); font-size:14px;">Simple process | Guided support | Start your investment journey today</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h4>Rahul Aher</h4>
+        <p>Authorized Person associated with Angel One Ltd.</p>
+        <p>Kothrud, Pune</p>
+        <p>Phone: +91 95112 90921</p>
+        <p>WhatsApp: +91 95112 90921</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p>Demat Account Opening</p>
+        <p>Trading Support</p>
+        <p>IPO Guidance</p>
+        <p>Mutual Fund Support</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="disclaimer">
+        <h4>Disclaimer</h4>
+        <p>Rahul Aher is an Authorized Person associated with Angel One Ltd. Investments in securities market are subject to market risks. Read all the related documents carefully before investing.</p>
+        <p style="margin-top:10px;">This page is for account opening assistance and service support purposes only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-mobile">
+    <a href="https://a.aonelink.in/ANGOne/AZrkQiS" class="btn btn-primary" target="_blank" rel="noopener" >Open Account</a>
+    <a href="https://wa.me/919511290921" class="btn btn-secondary" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</body>
+</html>
